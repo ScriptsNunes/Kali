@@ -5,7 +5,6 @@ apt-get -qy upgrade
 apt autoremove
 
 # INSTALL BASIC APPs.
-# apt -y install open-vm-tools-desktop fuse
 echo "INSTALL BASIC APPs."
 apt-get -qy install terminator htop nethogs gedit vim openssh-server aptitude tor rar unrar
 echo -e '\033[01;32mDone \033[00;37m'
@@ -106,3 +105,52 @@ cd setup
 sudo ./setup.sh -c
 cd ../../
 echo -e '\033[01;32mDone \033[00;37m'
+
+# # CREATE S37D3VNULL alias in .bashrc.
+# echo "CREATE S37D3VNULL alias in .bashrc."
+# echo "
+# # ==============    ALIAS S37D3VNULL ==========================
+
+# alias publicip='wget http://ipinfo.io/ip -qO -'
+# alias publicip-60='watch -n 60 wget http://ipinfo.io/ip -qO -'
+# alias install-panoptic='cd /root && git clone https://github.com/lightos/panoptic.git'
+# alias install-sqlmap='cd /root && git clone https://github.com/sqlmapproject/sqlmap.git'
+# alias term='gnome-terminal &'
+# alias set_ipforward='echo 1 > /proc/sys/net/ipv4/ip_forward'
+# " >> ~/.bashrc
+# source ~/.bashrc
+# echo -e '\033[01;32mDone \033[00;37m'
+
+#openvas
+#nessus
+# 1) Disable screen lock 
+apt autoremove
+: '
+ESTILOS
+00: Nenhum
+01: Negrito
+04: Sublinhado
+05: Piscante
+07: Reverso
+08: Oculto 
+
+CORES DE TEXTO
+30: Preto
+31: Vermelho
+32: Verde
+33: Amarelo
+34: Azul
+35: Magenta (Rosa)
+36: Ciano (Azul Ciano)
+37: Branco 
+
+CORES DE FUNDO
+40: Preto
+41: Vermelho
+42: Verde
+43: Amarelo
+44: Azul
+45: Magenta (Rosa)
+46: Ciano (Azul Ciano)
+47: Branco '
+ 
